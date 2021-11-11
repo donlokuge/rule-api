@@ -1,0 +1,27 @@
+{
+    "id": "rule#id#iud", // id of rule
+    "name": "RuleName", // name of rule
+    "description": "", // description of rule
+    "enabled": true, // rule is enabled or disabled
+    "notificationGroup": "SalesAdmins", // name of the notification group assuming there will be notifications for group of users
+    "comparisonOperator": "GreaterThanThreshold", // comparison operator value for comparison [>, <, >=, <=]
+    "threshold": "20", // value of threshold
+    "points": [ // evaluate rule by following points
+        {// fist point
+            "type": "Table", // type of point values [table, s3 etc]
+            "table": "Sales",  // name of the table
+            "function": {// function to execute to get the point
+                "name": "lastPointSaleByDepartment", // function name lastPointSaleBy[Hierarchy] assuming there will be different functions.
+                "parameters": ["departmentId"] // any relevant parameter. could be empty, or id
+            }
+        },
+        {// second point
+            "type": "Table",
+            "table": "Forcate",
+            "function" :{
+                "name": "firstForcastPointSalesByByDepartment",
+                "parameters":["departmentId"]
+            }
+        }
+    ]
+}

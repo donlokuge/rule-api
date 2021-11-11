@@ -14,7 +14,7 @@ Rule sdk can be used to validate and execute the rule.
 
 The following is an example of the format. In this example, the JSON is formatted for easy reading
 
-```json
+```javascript
 {
     "id": "rule#id#iud", // id of rule
     "name": "RuleName", // name of rule
