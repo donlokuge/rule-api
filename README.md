@@ -115,4 +115,4 @@ AWS Cloud watch to process lambda logs and metrics
 
 AWS Secrects manager to manage secrets for lambda and dynamodb
 
-![Forecast](/rule_processing.png)# rule-api
+![Forecast](/rule_processing.png)
