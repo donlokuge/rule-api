@@ -16,7 +16,7 @@ The following is an example of the format. In this example, the JSON is formatte
 
 ```javascript
 {
-    "id": "rule#id#uId", // id of rule
+    "id": "rule#id#uid", // id of rule
     "name": "RuleName", // name of rule
     "description": "", // description of rule
     "enabled": true, // rule is enabled or disabled
